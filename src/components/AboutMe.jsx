@@ -8,7 +8,7 @@ export default function AboutMe() {
 
         <div className="about__content">
           {/* Elimina la sección de imagen, para no dejar ese hueco */}
-          <div className="about__text">
+          <div className="about__text" style={{textAlign: 'justify'}}>
             <p>
               Soy desarrollador con 2 años de experiencia en el área, cursando el 9no semestre
               de Ingeniería en Sistemas. He participado en el desarrollo de aplicaciones móviles
@@ -19,10 +19,18 @@ export default function AboutMe() {
               <strong> ASP.NET Core</strong>, ya sea en:
             </p>
             <ul>
-              <li><strong>Aplicaciones MVC</strong>: Para construir sitios web y arquitecturas con el patrón Modelo-Vista-Controlador.</li>
-              <li><strong>Razor Pages</strong>: Ideal para páginas estáticas o dinámicas sin tanta complejidad.</li>
-              <li><strong>Blazor</strong>: Framework para construir aplicaciones web interactivas en C# y WebAssembly, sin JavaScript.</li>
-              <li><strong>API RESTful</strong>: Creación de Web APIs eficientes, seguras y con soporte para JSON, XML o GraphQL.</li>
+              <li style={{color: '#2563eb'}}>
+                <strong>Aplicaciones MVC</strong>: Para construir sitios web y arquitecturas con el patrón Modelo-Vista-Controlador.
+              </li>
+              <li style={{color: '#2563eb'}}>
+                <strong>Razor Pages</strong>: Ideal para páginas estáticas o dinámicas sin tanta complejidad.
+              </li>
+              <li style={{color: '#2563eb'}}>
+                <strong>Blazor</strong>: Framework para construir aplicaciones web interactivas en C# y WebAssembly, sin JavaScript.
+              </li>
+              <li style={{color: '#2563eb'}}>
+                <strong>API RESTful</strong>: Creación de Web APIs eficientes, seguras y con soporte para JSON, XML o GraphQL.
+              </li>
             </ul>
             <p>
               Además, me encanta trabajar con <strong>React</strong> para el desarrollo de interfaces de usuario modernas y
