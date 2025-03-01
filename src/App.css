@@ -177,8 +177,16 @@
 .projects__grid {
   display: grid;
   gap: 1.5rem;
-  /* Por defecto, adaptativo a pantallas pequeñas */
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  
+  /* Por defecto (móviles): 1 columna */
+  grid-template-columns: 1fr;
+}
+
+/* A partir de 768px de ancho (tablets/desktop): 2 columnas */
+@media (min-width: 768px) {
+  .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ================================

@@ -30,12 +30,13 @@ export default function Projects() {
     },
     {
       title: 'Proyecto 3',
-      description: 'Aplicación ASP.NET Core MVC para gestionar empleados, roles, departamentos, nóminas, préstamos y ausencias. Utiliza Dapper para SQL Server y BCrypt para la seguridad. Incorpora generación de PDF y operaciones CRUD. Además, cuenta con una SPA en React creada con Create React App, usando hooks, React Router, Axios y Tailwind CSS. Sistema modular y escalable para administración de RRHH y nóminas.',
+      description: 'Sistema integral con .NET 8 Core (backend), React (frontend) y SQL Server. Gestiona inventario en tiempo real, descuentos y créditos. Incluye pagos (efectivo, crédito, mixto) y generación de pagarés. Ofrece módulo logístico para control de camiones y combustible. Permite crear/editar productos, asignar roles y auditar procesos. Incluye panel de reportes con ventas, stock y créditos pendientes.',
       tags: ['React', 'Axios', 'SPA (Single Page Application)', '.net core'],
       codeLink: 'https://github.com/DanielValenz21/volcan-front',
       demoLink: '#',
       image: proyecto3Img
     }
+    
     
   ];
 
