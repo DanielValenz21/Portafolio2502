@@ -1,0 +1,84 @@
+.skills {
+    background-color: #ecfdf5; /* un verde súper claro, si gustas */
+    padding: 4rem 0;
+  }
+  
+  .skills__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 2rem;
+  }
+  
+  /* GRID de 3 columnas en desktop, 1 en móvil */
+  .skills__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .skills__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .skills__box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+  }
+  
+  .skills__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  /* Colores de título */
+  .skills__title--blue {
+    color: #2563eb;
+  }
+  
+  .skills__title--green {
+    color: #22c55e;
+  }
+  
+  /* Cada skill con su barra */
+  .skill-item {
+    margin-bottom: 1.25rem;
+  }
+  
+  /* Nombre de skill y porcentaje */
+  .skill-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+    color: #2563eb;
+  }
+  
+  /* Fondo de la barra */
+  .skill-bar-background {
+    background-color: #dbeafe; /* azul clarito */
+    border-radius: 8px;
+    overflow: hidden;
+    height: 8px;
+  }
+  
+  /* Barra rellena */
+  .skill-bar-fill {
+    background-color: #2563eb;
+    height: 100%;
+    width: 0; /* por defecto */
+    transition: width 0.4s ease; /* animación suave */
+  }
+  
