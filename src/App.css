@@ -150,9 +150,11 @@
 }
 
 /* --- Projects --- */
-
+/* ================================
+   SECCIÓN "Mis Proyectos"
+================================ */
 .projects {
-  background-color: #fff;
+  background-color: #f8fafc; /* Fondo muy claro para la sección */
   padding: 4rem 0;
 }
 
@@ -162,74 +164,121 @@
   padding: 0 1.5rem;
 }
 
+/* Título centrado */
 .section-title {
+  text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  color: #2563eb; /* actualizado a azul */
+  color: #2563eb;
   margin-bottom: 2rem;
-  text-align: center;
 }
 
+/* GRID de tarjetas */
 .projects__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
+  /* Por defecto, adaptativo a pantallas pequeñas */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
+/* ================================
+   TARJETA DE PROYECTO
+================================ */
 .project-card {
-  background-color: #fafafa;
+  background-color: #fff;
   border-radius: 8px;
-  padding: 1rem;
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  overflow: hidden;            /* Si algo sobresale, se recorta */
   display: flex;
   flex-direction: column;
+  transition: box-shadow 0.3s ease;
 }
 
+/* Efecto hover suave */
+.project-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Imagen del proyecto (o placeholder) */
 .project-card__image {
-  background-color: #e2e8f0;
-  height: 160px;
-  border-radius: 6px;
-  margin-bottom: 1rem;
+  background-color: #e2e8f0;   /* gris clarito */
+  height: 160px;              /* ajusta a tu gusto */
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #666;
 }
 
-.project-card__tags {
-  margin-top: auto;
-  margin-bottom: 1rem;
+/* Si usas <img>, dale tamaño completo */
+.project-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Contenido textual de la tarjeta */
+.project-card__body {
+  padding: 1rem 1.25rem;       /* espacio interno */
   display: flex;
+  flex-direction: column;
   gap: 0.5rem;
 }
 
-.project-card__tags span {
-  background-color: #dbeafe; /* azul clarito */
+/* Título */
+.project-card__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin: 0.5rem 0 0.25rem;
+}
+
+/* Descripción, justificada */
+.project-card__description {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #2563eb;
+  text-align: justify;        /* justificado */
+  margin: 0;
+}
+
+/* Contenedor de tags/pills */
+.project-card__tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;            /* para que bajen a otra línea si son muchas */
+  margin-top: 0.5rem;
+}
+
+/* Estilo de cada tag/pill */
+.project-card__tag {
+  background-color: #dbeafe;  /* azul clarito */
   color: #2563eb;
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
 }
 
+/* Contenedor de enlaces "Código" y "Demo" */
 .project-card__links {
+  margin-top: auto;           /* empuja los links al fondo si la descripción es larga */
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 0.5rem;
+  border-top: 1px solid #e5e7eb; /* línea sutil arriba */
   font-size: 0.9rem;
 }
 
+/* Estilo de enlaces Código / Demo */
 .project-card__links a {
   color: #2563eb;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .project-card__links a:hover {
   text-decoration: underline;
 }
 
-/* Agregar regla para descripciones en Mis Proyectos */
-.project-card p {
-  color: #2563eb;
-}
 
 /* --- Skills --- */
 .skills {
