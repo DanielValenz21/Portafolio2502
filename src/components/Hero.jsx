@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedinIn, FaEnvelope } from 'react-icons/fa';
-import perfilImg from '../assets/Perfil.JPEG'; 
+import perfilImg from '../assets/Perfil.jpg'; 
 
 export default function Hero() {
   return (
