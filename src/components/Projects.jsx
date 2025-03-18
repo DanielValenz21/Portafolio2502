@@ -3,6 +3,7 @@ import { FaGithub } from 'react-icons/fa';  // <--- Importar el ícono de GitHub
 import proyecto1Img from '../assets/Proyecto1.jpeg'; // Ejemplo
 import proyecto2Img from '../assets/Proyecto2.jpeg'; // Ejemplo
 import proyecto3Img from '../assets/Proyecto3.jpeg'; // Ejemplo
+import proyectovolcanesbackImg from '../assets/proyectovolcanesback.jpeg'; // Nueva imagen
 
 export default function Projects() {
   const projectsData = [
@@ -35,9 +36,24 @@ export default function Projects() {
       codeLink: 'https://github.com/DanielValenz21/volcan-front',
       demoLink: '#',
       image: proyecto3Img
+    },
+    {
+      title: 'API Inventario y Créditos',
+      description: `
+        Este proyecto es una API RESTful para gestionar inventario y créditos (ventas) en una empresa ficticia. Las principales tecnologías y enfoques son:
+        
+        • Backend: Node.js con Express.
+        • Base de Datos: SQL Server gestionado con el paquete mssql, usando transacciones para operaciones críticas.
+        • Autenticación: JWT para proteger endpoints y gestionar el acceso.
+        • Documentación: Swagger (swagger-jsdoc y swagger-ui-express) para generar documentación interactiva.
+        • Seguridad y Configuración: Uso de dotenv para variables sensibles, crypto para el hashing de contraseñas y CORS para solicitudes de orígenes múltiples.
+        • Desarrollo: nodemon para recargas automáticas durante el desarrollo.
+      `,
+      tags: ['Node.js', 'Express', 'SQL Server', 'JWT', 'Swagger'],
+      codeLink: '#',
+      demoLink: '#',
+      image: proyectovolcanesbackImg
     }
-    
-    
   ];
 
   return (
