@@ -20,7 +20,7 @@ export default function Hero() {
           <div className="hero__buttons">
             {/* Cambiado a "Ver CV" */}
             <a
-              href="https://drive.google.com/file/d/1KOuMgKJIxk2PQJjjR3Av9rY9kbmJZDud/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1KOuMgKJIxk2PQJjjR3Av9rY9kbmJZDud/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="btn btn-blue"
