@@ -4,6 +4,7 @@ import proyecto1Img from '../assets/Proyecto1.jpeg'; // Ejemplo
 import proyecto2Img from '../assets/Proyecto2.jpeg'; // Ejemplo
 import proyecto3Img from '../assets/Proyecto3.jpeg'; // Ejemplo
 import proyectovolcanesbackImg from '../assets/proyectovolcanesback.jpeg'; // Nueva imagen
+import FotoAppBoletas1 from '../assets/FotoAppBoletas1.jpeg';
 
 export default function Projects() {
   const projectsData = [
@@ -22,7 +23,7 @@ export default function Projects() {
       image: proyecto1Img
     },
     {
-      title: 'Proyecto 2',
+      title: 'Proyecto TConsulting',
       description: 'Es una aplicación ASP.NET Core MVC integral para gestionar empleados, roles, departamentos, nóminas, préstamos y ausencias Utiliza Dapper para acceder a una base de datos SQL Server y BCrypt para la seguridad de las contraseñas. La estructura se basa en controladores, repositorios, modelos y vistas, facilitando operaciones CRUD y generación de PDF. En resumen, es un sistema robusto de administración de recursos humanos y nóminas con autenticación y validaciones integradas..',
       tags: ['ASP.NET Core', 'MVC', 'Dapper', 'Bootstrap'],
       codeLink: 'https://github.com/DanielValenz21/TConsulting',
@@ -30,7 +31,7 @@ export default function Projects() {
       image: proyecto2Img
     },
     {
-      title: 'Proyecto 3',
+      title: 'Proyecto Inventario Volcanes',
       description: 'Sistema integral con .NET 8 Core (backend), React (frontend) y SQL Server. Gestiona inventario en tiempo real, descuentos y créditos. Incluye pagos (efectivo, crédito, mixto) y generación de pagarés. Ofrece módulo logístico para control de camiones y combustible. Permite crear/editar productos, asignar roles y auditar procesos. Incluye panel de reportes con ventas, stock y créditos pendientes.',
       tags: ['React', 'Axios', 'SPA (Single Page Application)', '.net core'],
       codeLink: 'https://github.com/DanielValenz21/volcan-front',
@@ -53,6 +54,28 @@ export default function Projects() {
       codeLink: '#',
       demoLink: '#',
       image: proyectovolcanesbackImg
+    },
+    {
+      title: 'App Scanner Boletas de Tránsito',
+      description: `
+        Aplicación móvil desarrollada en React Native para la Policía Nacional de Tránsito. 
+        Características principales:
+        • Escaneo y digitalización de boletas de tránsito
+        • Sincronización con sistema administrativo central
+        • Autenticación segura con JWT
+        • Registro de actividad y logs por usuario
+        • API REST documentada con Swagger
+        • Gestión de estados y permisos por usuario
+        • Base de datos MySQL para almacenamiento persistente
+
+        Enlaces del proyecto:
+        • Frontend: https://github.com/DanielValenz21/BoletasAPP
+        • Backend: https://github.com/DanielValenz21/BoletasDocsBack
+      `,
+      tags: ['React Native', 'MySQL', 'Express', 'JWT', 'Swagger', 'Axios'],
+      codeLink: 'https://github.com/DanielValenz21/BoletasAPP',
+      demoLink: '#',
+      image: FotoAppBoletas1
     }
   ];
 
